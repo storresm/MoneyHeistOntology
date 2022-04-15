@@ -1,0 +1,1392 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/oventura/ontologies/2022/3/The_Money_Heist"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/oventura/ontologies/2022/3/The_Money_Heist">
+    <Prefix name="" IRI="http://www.semanticweb.org/oventura/ontologies/2022/3/untitled-ontology-11#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="The_Money_Heist" IRI="http://www.semanticweb.org/oventura/ontologies/2022/3/The_Money_Heist#"/>
+    <Annotation>
+        <AnnotationProperty IRI="#authors"/>
+        <Literal xml:lang="authors:  sergio torres maiquez oscar ventura romero"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#ontology_name"/>
+        <Literal>Serie: &quot;The Money Heist&quot;
+Serie: &quot;La Casa de Papel&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Comment: Desarrollar una ontología sobre la información de una serie de televisión.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Link: https://la-casa-de-papel.fandom.com/es/wiki/La_Casa_de_Papel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <Literal>https://es.dbpedia.org/page/La_casa_de_papel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bank_Workers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bank_of_Spain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country_House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Episodic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#First_Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#First_Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fourth_Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GEOs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hangar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hostage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mint_Workers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_Currency_and_Stamp_Factory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negotiator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police_Chief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police_Tent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seasons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Second_Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Second_Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secondary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security_Forces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tertiary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Third_Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warehouse_Water_Tank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Cast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Character"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Gender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_ProminentAttribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Has_Dead"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Has_NickName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Has_NumberChapter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Has_Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alberto_Vicuña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alfonso_Egea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alicia_Sierra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alison_Parker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ariadna_Cascales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arturo_Román"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Benito_Antoñanzas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berlín"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bogotá"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cincinnati"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comisario_Sánchez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compañero_de_celda_de_Berlón"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coronel_Prieto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coronel_Tamayo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#César_Gandía"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estocolmo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farmacétuica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Helsinki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jacinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Julia_Otero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lisboa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Logroño"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madre_de_Río"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madre_de_Tokio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manila"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mari_Carmen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mariví_Fuentes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marsella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercedes_Colmenar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercedes_Pascua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moscú"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Médico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mónica_Gaztambide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nacho_Abad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nairobi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nikolai_Dimitrievich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oslo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pablo_Ruiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palermo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paula_Vicuña"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Periodista_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Periodista_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pilar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Presentadora_de_Informativos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Raquel_Murillo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Río"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sofía"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susana_Griso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suárez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tokio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ángel_Rubio"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#authors"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#ontology_name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="swrl:equal"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="swrl:lessThan"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actress"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bank_Workers"/>
+        <Class IRI="#Hostage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bank_of_Spain"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <Class IRI="#Serie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country_House"/>
+        <Class IRI="#Lair"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customers"/>
+        <Class IRI="#Hostage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episodic"/>
+        <Class IRI="#Cast"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#First_Part"/>
+        <Class IRI="#First_Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#First_Season"/>
+        <Class IRI="#Seasons"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fourth_Part"/>
+        <Class IRI="#Second_Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GEOs"/>
+        <Class IRI="#Police"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hangar"/>
+        <Class IRI="#Lair"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hostage"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lair"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Main"/>
+        <Class IRI="#Cast"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military"/>
+        <Class IRI="#Security_Forces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mint_Workers"/>
+        <Class IRI="#Hostage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National_Currency_and_Stamp_Factory"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negotiator"/>
+        <Class IRI="#Police"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Others"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police"/>
+        <Class IRI="#Security_Forces"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police_Agent"/>
+        <Class IRI="#Police"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police_Chief"/>
+        <Class IRI="#Police"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police_Tent"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robber"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seasons"/>
+        <Class IRI="#Serie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Second_Part"/>
+        <Class IRI="#First_Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Second_Season"/>
+        <Class IRI="#Seasons"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secondary"/>
+        <Class IRI="#Cast"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security_Forces"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tertiary"/>
+        <Class IRI="#Cast"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Third_Part"/>
+        <Class IRI="#Second_Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warehouse_Water_Tank"/>
+        <Class IRI="#Lair"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Actress"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bank_Workers"/>
+        <Class IRI="#Customers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Military"/>
+        <Class IRI="#Police"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Police_Agent"/>
+        <NamedIndividual IRI="#Alberto_Vicuña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Alfonso_Egea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Negotiator"/>
+        <NamedIndividual IRI="#Alicia_Sierra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Alison_Parker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Ariadna_Cascales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mint_Workers"/>
+        <NamedIndividual IRI="#Arturo_Román"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police_Agent"/>
+        <NamedIndividual IRI="#Benito_Antoñanzas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Berlín"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Bogotá"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Cincinnati"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police_Chief"/>
+        <NamedIndividual IRI="#Comisario_Sánchez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Compañero_de_celda_de_Berlón"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police_Chief"/>
+        <NamedIndividual IRI="#Coronel_Tamayo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bank_Workers"/>
+        <NamedIndividual IRI="#César_Gandía"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Denver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country_House"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hangar"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Warehouse_Water_Tank"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Estocolmo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Farmacétuica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Helsinki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mint_Workers"/>
+        <NamedIndividual IRI="#Jacinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Joao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actress"/>
+        <NamedIndividual IRI="#Julia_Otero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Julia_Otero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Lisboa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Logroño"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Madre_de_Río"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Madre_de_Tokio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Manila"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Mari_Carmen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Mariví_Fuentes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Marsella"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Mercedes_Colmenar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Mercedes_Pascua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Moscú"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Médico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mint_Workers"/>
+        <NamedIndividual IRI="#Mónica_Gaztambide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Nacho_Abad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Nairobi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Nikolai_Dimitrievich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Oslo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Pablo_Ruiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Paco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Palermo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Paula_Vicuña"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Periodista_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Periodista_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police_Agent"/>
+        <NamedIndividual IRI="#Pilar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Presentadora_de_Informativos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Negotiator"/>
+        <NamedIndividual IRI="#Raquel_Murillo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Río"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Sofía"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actress"/>
+        <NamedIndividual IRI="#Susana_Griso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Others"/>
+        <NamedIndividual IRI="#Susana_Griso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GEOs"/>
+        <NamedIndividual IRI="#Suárez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Robber"/>
+        <NamedIndividual IRI="#Tokio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police_Agent"/>
+        <NamedIndividual IRI="#Ángel_Rubio"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <NamedIndividual IRI="#Alison_Parker"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <NamedIndividual IRI="#Berlín"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NickName"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+        <Literal>El Profesor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <NamedIndividual IRI="#El_Profesor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <NamedIndividual IRI="#Madre_de_Tokio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <NamedIndividual IRI="#Oslo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Has_Gender"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Has_Cast"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Has_Character"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Has_ProminentAttribute"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Cast"/>
+        <Class IRI="#Cast"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Gender"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_ProminentAttribute"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Cast"/>
+        <Class IRI="#Episodic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Cast"/>
+        <Class IRI="#Main"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Cast"/>
+        <Class IRI="#Secondary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Cast"/>
+        <Class IRI="#Tertiary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Bank_Workers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#GEOs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Hostage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Military"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Mint_Workers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Negotiator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Others"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Police"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Police_Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Police_Chief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Robber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Character"/>
+        <Class IRI="#Security_Forces"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Gender"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Gender"/>
+        <Class IRI="#Actress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_ProminentAttribute"/>
+        <Class IRI="#Robber"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Has_Dead"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Has_NickName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Has_NumberChapter"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Has_Role"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Dead"/>
+        <Class IRI="#Robber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Dead"/>
+        <Class IRI="#Security_Forces"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_NickName"/>
+        <Class IRI="#Robber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Bank_Workers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Customers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Hostage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Military"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Mint_Workers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Others"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Police"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Robber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Has_Role"/>
+        <Class IRI="#Security_Forces"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Has_Dead"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Has_NickName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Has_NumberChapter"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Has_Role"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Has_NumberChapter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Secondary"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Has_NumberChapter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Main"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Has_NumberChapter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Tertiary"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Has_NumberChapter"/>
+                <Variable IRI="urn:swrl:var#c"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Episodic"/>
+                <Variable IRI="urn:swrl:var#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actor</IRI>
+        <Literal>Los actores masculinos de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actress</IRI>
+        <Literal>Las actrices femeninas de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bank_Workers</IRI>
+        <Literal>Trabajadores del Banco de España</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bank_of_Spain</IRI>
+        <Literal>Es el Banco de España, donde se desarrollan dos temporadas de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Bank_of_Spain</IRI>
+        <Literal>https://es.dbpedia.org/page/Banco_de_Espa%C3%B1a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Berlín</IRI>
+        <Literal>https://es.dbpedia.org/page/Berl%C3%ADn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cast</IRI>
+        <Literal>El reparto de los actores según su participación en la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal>Los diferentes roles de los actores que han participado en la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country_House</IRI>
+        <Literal>Casa de campo donde se reunen para organizar las estrategias de los robos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Customers</IRI>
+        <Literal>Clientes del banco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#El_Profesor</IRI>
+        <Literal>https://es.dbpedia.org/page/%C3%81lvaro_Morte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Episodic</IRI>
+        <Literal>Reparto Episódico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#First_Part</IRI>
+        <Literal>Primera Parte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#First_Season</IRI>
+        <Literal>Primera Temporada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fourth_Part</IRI>
+        <Literal>Cuarta Parte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GEOs</IRI>
+        <Literal>Cuerpo Especial de la Policia GEOs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hangar</IRI>
+        <Literal>Lugar de la primera y segunda parte donde se esconde &quot;El Profesor&quot;. Angar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_Cast</IRI>
+        <Literal>Corresponde al nivel de participación del personaje en la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_Character</IRI>
+        <Literal>Corresponde al rol del personaje en la serie. (Atracador, policia, extras, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_Dead</IRI>
+        <Literal>Nos indica si un miembro de la banda muere durante la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_Gender</IRI>
+        <Literal>Nos indica el genero del personaje, masculino o femenino.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_NickName</IRI>
+        <Literal>Nos indica el apodo e algunos de los miembros de la banda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_NumberChapter</IRI>
+        <Literal>Cooresponde a los número de los capítulos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_ProminentAttribute</IRI>
+        <Literal>Nos indica la cualidad más destacable del miembro de la banda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Has_Role</IRI>
+        <Literal>Nos indica el rol de los actores de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Helsinki</IRI>
+        <Literal>https://dbpedia.org/page/Helsinki</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hostage</IRI>
+        <Literal>Tenemos los actores trabajadores y los clientes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Julia_Otero</IRI>
+        <Literal>https://es.dbpedia.org/page/Julia_Otero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lair</IRI>
+        <Literal>Lugares donde tenemos las ubicaciones donde se encuentra el líder de los atracadores, “El Profesor” y donde se reúnen todos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal>Diferentes ubicaciones y lugares principales donde se ha desarrollado la serie y las principales escenas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Main</IRI>
+        <Literal>Reparto Principal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Military</IRI>
+        <Literal>Equipo de Militares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mint_Workers</IRI>
+        <Literal>Trabajadores de la Fábrica Nacional de la Moneda y Timbre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#National_Currency_and_Stamp_Factory</IRI>
+        <Literal>Es la Fábrica de la Casa de la Moneda y Timbre, donde se desarrollan varias temperadas de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#National_Currency_and_Stamp_Factory</IRI>
+        <Literal>https://es.dbpedia.org/page/F%C3%A1brica_Nacional_de_Moneda_y_Timbre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negotiator</IRI>
+        <Literal>Negociadores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Others</IRI>
+        <Literal>Tenemos los actores extras, público, esporádicos, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal>Identificación de los actores, diferenciados por sexo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Police</IRI>
+        <Literal>Equipo de Policias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Police_Agent</IRI>
+        <Literal>Agentes de Policia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Police_Chief</IRI>
+        <Literal>Jefe de la Policia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Police_Tent</IRI>
+        <Literal>Es la carpa de la policía, donde se desarrolla toda la estrategia de negociación de la policía con los atracadores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>Es el restaurante de la primera y segunda temporada donde el profesor conoce a la primera negociadora de la policía.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Robber</IRI>
+        <Literal>Tenemos los actores que son atracadores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Seasons</IRI>
+        <Literal>Las temporadas de la serie y sus partes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Second_Part</IRI>
+        <Literal>Segunda Parte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Second_Season</IRI>
+        <Literal>Segunda Temporada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Secondary</IRI>
+        <Literal>Reparto Secundario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Security_Forces</IRI>
+        <Literal>Tenemos los actores de la policía y de los militares.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Serie</IRI>
+        <Literal>Encontramos el reparto de los actores identificados en principal, segundario, terciario y episódico, y las temporadas de la serie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tertiary</IRI>
+        <Literal>Reparto Terciario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Third_Part</IRI>
+        <Literal>Tercera Parte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Warehouse_Water_Tank</IRI>
+        <Literal>Lugar de la tercera y cuarta parte donde se esconde &quot;El Profesor&quot;. Almacen de tanques de agua.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#authors</IRI>
+        <Literal>Autores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ontology_name</IRI>
+        <Literal>Nombre de la Ontología</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:comment</AbbreviatedIRI>
+        <Literal>Comentarios</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+        <Literal>Título de la ontología</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:versionInfo</AbbreviatedIRI>
+        <Literal>Versión de la ontología</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
+        <Literal></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
